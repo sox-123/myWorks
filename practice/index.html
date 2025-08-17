@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: aquamarine;
+            align-items: center;
+            /* justify-content: center; */
+            display: flex;
+        }
+        .ball {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: red;
+            animation: rolling 20s linear infinite forwards,move 10s linear infinite;
+        }
+
+        @keyframes rolling {
+           to{
+            transform: rotateZ(5000deg);
+           }
+          
+        }
+
+        @keyframes move {
+            from{
+
+            }
+            to{
+                transform: translateX(1000px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball">
+            eye
+        </div>
+    </div>
+</body>
+</html>
